@@ -9,16 +9,17 @@ class Formatter {
   static titleize(name) {
     let except = [ 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from' ]
     let splitStr = name.toLowerCase().split(' ');
+    let newString = []
 
     for ( let i = 0; i < splitStr.length; i++ ) {
       if (i == 0) {
-        splitStr.charAt(0).toUpperCase() + name.slice(1)
+        newString.push( this.capitalize( arrayOfWords[ n ] ) )
       } else {
 
       }
     }
 
-    return splitStr.join( " " );
+    return newString.join( " " );
   }
 }
 
