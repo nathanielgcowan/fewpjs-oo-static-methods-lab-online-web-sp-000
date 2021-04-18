@@ -15,7 +15,7 @@ class Formatter {
       if ( i == except ) {
         newString.push( this.capitalize( splitStr[ i ] ) )
       } else {
-        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
       }
 
     }
