@@ -15,10 +15,10 @@ class Formatter {
       if ( i == 0 ) {
         newString.push( this.capitalize( splitStr[ n ] ) )
       } else {
-        if ( except.includes( splitStr[ n ] ) ) {
-          newString.push( splitStr[ n ] )
+        if ( except.includes( splitStr[ i ] ) ) {
+          newString.push( splitStr[ i ] )
         } else {
-          result.push( this.capitalize( splitStr[ n ] ) )
+          result.push( this.capitalize( splitStr[ i ] ) )
         }
       }
 
