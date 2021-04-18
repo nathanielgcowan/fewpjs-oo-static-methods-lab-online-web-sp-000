@@ -8,11 +8,12 @@ class Formatter {
   }
   static titleize(name) {
     let except = [ 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from' ]
-
-    let splitName = name.toLowerCase().split(' ');
-    for (let i = 0; i < splitName.length; i++) {
-        splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
+    while !except {
+      let splitName = name.toLowerCase().split(' ');
+      for (let i = 0; i < splitName.length; i++) {
+          splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
+      }
+      return splitName.join(' ');
     }
-    return splitName.join(' ');
   }
 }
