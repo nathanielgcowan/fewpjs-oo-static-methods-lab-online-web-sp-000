@@ -13,17 +13,17 @@ class Formatter {
 
     for ( let i = 0; i < splitStr.length; i++ ) {
       if ( i == 0 ) {
-        splitStr.push( this.capitalize( splitStr[ i ] ) )
+        newString.push( this.capitalize( splitStr[ i ] ) )
       } else {
         if ( except.includes( splitStr[ i ] ) ) {
-          splitStr.push( splitStr[ i ] )
+          newString.push( splitStr[ i ] )
         } else {
-          splitStr.push( this.capitalize( splitStr[ i ] ) )
+          newString.push( this.capitalize( splitStr[ i ] ) )
         }
       }
 
     }
 
-    return splitStr.join( " " );
+    return newString.join( " " );
   }
 }
