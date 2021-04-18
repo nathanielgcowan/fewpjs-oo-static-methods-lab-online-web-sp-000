@@ -14,7 +14,7 @@ class Formatter {
       if (i == 0) {
         name.charAt(0).toUpperCase() + name.slice(1)
       } else {
-        
+
       }
     }
 
