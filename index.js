@@ -12,7 +12,7 @@ class Formatter {
     let splitStr = name.toLowerCase().split(' ');
 
     for ( let i = 0; i < splitStr.length; i++ ) {
-      if ( except) {
+      if ( except.includes(splitStr[i])) {
         splitStr[i] = splitStr[i].charAt(0).toLowerCase() + splitStr[i].substring(1);
       } else {
         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
