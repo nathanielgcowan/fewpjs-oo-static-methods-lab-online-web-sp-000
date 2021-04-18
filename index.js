@@ -13,6 +13,5 @@ class Formatter {
           splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
       }
       return splitName.join(' ');
-    }
   }
 }
