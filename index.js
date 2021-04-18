@@ -18,7 +18,7 @@ class Formatter {
         if ( except.includes( splitStr[ i ] ) ) {
           newString.push( splitStr[ i ] )
         } else {
-          result.push( this.capitalize( splitStr[ i ] ) )
+          newString.push( this.capitalize( splitStr[ i ] ) )
         }
       }
 
