@@ -26,4 +26,3 @@ class Formatter {
     return splitStr.join( " " );
   }
 }
-
