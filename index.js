@@ -13,7 +13,7 @@ class Formatter {
 
     for ( let i = 0; i < splitStr.length; i++ ) {
       if (i == 0) {
-        newString.push( this.capitalize( arrayOfWords[ n ] ) )
+        newString.push( this.capitalize( splitStr[ i ] ) )
       } else {
 
       }
