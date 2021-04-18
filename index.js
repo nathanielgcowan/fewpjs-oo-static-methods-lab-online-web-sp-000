@@ -12,15 +12,15 @@ class Formatter {
     let newString = []
 
     for ( let i = 0; i < splitStr.length; i++ ) {
-      // if (i == 0) {
-        // splitStr[i] = this.capitalize( splitStr[ i ] ) )
-      // } else {
+       if (i == 0) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+       } else {
         if ( except.includes(splitStr[i])) {
           splitStr[i] = splitStr[i].charAt(0).toLowerCase() + splitStr[i].substring(1);
         } else {
           splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
         }
-      // }
+       }
     }
 
     return splitStr.join( " " );
