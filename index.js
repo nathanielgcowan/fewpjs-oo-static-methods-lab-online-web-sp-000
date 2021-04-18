@@ -12,18 +12,14 @@ class Formatter {
     let splitStr = name.toLowerCase().split(' ');
 
     for ( let i = 0; i < splitStr.length; i++ ) {
-      if ( i == 0 ) {
+      if ( i == except ) {
         newString.push( this.capitalize( splitStr[ i ] ) )
       } else {
-        if ( except.includes( splitStr[ i ] ) ) {
-          newString.push( splitStr[ i ] )
-        } else {
-          newString.push( this.capitalize( splitStr[ i ] ) )
-        }
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
       }
 
     }
 
-    return newString.join( " " );
+    return splitStr.join( " " );
   }
 }
