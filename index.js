@@ -12,7 +12,7 @@ class Formatter {
 
     for ( let i = 0; i < splitStr.length; i++ ) {
       if (i == 0) {
-        name.charAt(0).toUpperCase() + name.slice(1)
+        splitStr.charAt(0).toUpperCase() + name.slice(1)
       } else {
 
       }
