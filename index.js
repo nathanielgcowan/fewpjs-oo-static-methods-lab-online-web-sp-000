@@ -10,7 +10,7 @@ class Formatter {
     let except = [ 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from' ]
     let newString = [];
     let splitStr = name.toLowerCase().split(' ');
-  
+
     for ( let i = 0; i < splitStr.length; i++ ) {
       if ( i == 0 ) {
         newString.push( this.capitalize( splitStr[ n ] ) )
@@ -23,7 +23,7 @@ class Formatter {
       }
 
     }
-    
+
     return newString.join( " " );
   }
 }
