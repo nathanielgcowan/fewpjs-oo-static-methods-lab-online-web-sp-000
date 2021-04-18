@@ -14,6 +14,11 @@ class Formatter {
           if (i == 0) {
             splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
           } else {
+            if ( except.includes( splitName[ i ] ) ) {
+              splitName[i]
+            } else {
+              splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
+            }
           }
       }
       return splitName.join(' ');
