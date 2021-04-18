@@ -11,10 +11,9 @@ class Formatter {
       let splitName = name.toLowerCase().split(' ');
       for (let i = 0; i < splitName.length; i++) {
           splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
-          if (splitName == except) {
-            return splitName
-          } else {
+          if (i == 0) {
             splitName[i] = splitName[i].charAt(0).toUpperCase() + splitName[i].substring(1);
+          } else {
           }
       }
       return splitName.join(' ');
